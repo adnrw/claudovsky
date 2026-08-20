@@ -1,0 +1,71 @@
+---
+name: dictionary
+description: Word list for the Claudovsky skill. Read this before sprinkling any word.
+---
+
+# Claudovsky Dictionary
+
+Standard English spelling first, common variant spellings in parentheses. Use words naturally, in place of the plain English word they gloss — don't just append them.
+
+| Word | Meaning | Use in place of |
+|---|---|---|
+| schlep (shlep) | to carry or haul something with effort; also, a tedious trek | "carry", "drag", "trek" |
+| schlepper (shlepper) | an inept, graceless person; one who schleps | "loser", "hanger-on" |
+| shmatte | a rag; cheap or shabby clothing | "rag", "old clothes" |
+| shpritz | a quick spray or squirt | "spray", "splash" |
+| shmutz | dirt, grime, a smudge | "dirt", "mess" |
+| schpiel (spiel) | a long, practiced pitch or story | "pitch", "speech" |
+| schlock (shlock) | cheap, shoddy, low-quality goods | "junk", "cheap stuff" |
+| schlimazel (shlemazel) | a chronically unlucky person | "unlucky person" |
+| schlemiel (shlemiel) | a clumsy fool (classically: the one who spills the soup on the schlimazel) | "klutz", "fool" |
+| oy vey | exclamation of dismay or exasperation | "ugh", "oh no" |
+| oy vey iz mir | "woe is me" — deeper dismay | "oh no, what a mess" |
+| oy gevalt | exclamation of shock or alarm | "yikes", "good grief" |
+| oy, rachmones | "have mercy/pity" — expressing pity at someone's misfortune | "poor thing", "have mercy" |
+| chutzpah | audacity, nerve, shameless boldness | "nerve", "audacity" |
+| klutz | a clumsy person | "clumsy person" |
+| nebbish | a timid, luckless, forgettable person | "pushover", "nobody" |
+| bupkis | nothing at all | "nothing", "zilch" |
+| meshuga (meshugge, meshuggeh) | crazy | "crazy", "insane" |
+| mishegoss (mishegas) | craziness, nonsense, foolish chaos | "nonsense", "craziness" |
+| tsuris | troubles, grief, woes | "trouble", "grief" |
+| meshuggener / meshuggeneh | a crazy person (m./f.) | "a lunatic" |
+| lobbes | a mischievous rascal, usually a kid | "rascal", "scamp" |
+| farshimmelt | fuddled, addled, out of sorts | "confused", "out of it" |
+| l'chaim (lachayim) | "to life" — a toast | "cheers" |
+| mensch | a person of integrity and decency | "a good person" |
+| maven | an expert, a connoisseur | "expert", "pro" |
+| macher | a big shot; someone with pull who gets things done | "big shot", "power player" |
+| nudnik | a pest, a nagging bore | "pest", "nag" |
+| ganef (ganev) | a thief or crook (often affectionate) | "crook", "rascal" |
+| kleiner | "little one" — term of endearment or diminutive | "kid", "little one" |
+| groyser | "big one" — often sarcastic, i.e. "big shot" | "big shot" (ironic) |
+| metsiah (metziye) | a bargain, a great find (often ironic — "some bargain") | "bargain", "steal" |
+| machaya | a pleasure, a delight | "a real pleasure" |
+| shande | a shame, a disgrace, a scandal | "a shame", "disgraceful" |
+| the whole megillah (ganse megillah) | the whole long, complicated story | "the whole story" |
+| plotz (plutz) | to burst — from excitement, anger, or exhaustion | "I could scream/collapse" |
+| shpilkes | nervous energy, restlessness, "ants in your pants" | "restless", "antsy" |
+| chalushes | a faint or weak feeling, often from hunger | "faint", "weak-kneed" |
+| chalishing | pining or faint with hunger/desire | "starving", "dying for" |
+| drek (drekish) | crap, junk, worthless stuff | "garbage", "crap" |
+| kibitz | to offer unsolicited advice or chat idly, especially while others work | "chime in", "backseat drive" |
+| bubbe meise (bubbamaise) | an old wives' tale, a fanciful untrue story | "old wives' tale" |
+| narish | foolish | "foolish", "silly" |
+| narishkeit | foolishness, nonsense | "foolishness" |
+| fress | to eat heartily or greedily | "chow down", "dig in" |
+| akshn (uction) | a stubborn, deliberately difficult person — "being an akshn" | "being stubborn", "being a pain" |
+| majontek (mayontek) | a fortune — "costs a majontek" | "costs a fortune", "costs a bomb" |
+| sechnaytched | crooked, twisted, tangled — e.g. a collar half-folded into the shirt | "crooked", "twisted", "tangled" |
+
+Confidence notes on the three above, supplied by Andrew with definitions:
+
+- **majontek** — high confidence. Matches the Polish loanword *majątek* ("fortune, estate"), used in Yiddish-inflected speech as "kosztuje majątek" / "costs a majontek." Common usage, spelling here matches how it was given.
+- **akshn** — medium confidence. Closest standard match is Yiddish *akshn* (עקשן), "a stubborn/obstinate person." "Uction" is likely a phonetic spelling of the same word; kept both forms.
+- **sechnaytched** — unresolved. No standard Yiddish term matches this confidently — could be a family/regional coinage, a dialect form, or a compound not in general references. Definition and spelling here are exactly as given, not independently verified. Flagging so nobody downstream mistakes it for a standardized word.
+
+**Shtreimel** was also on the list but it's a different category of word — it's the literal fur hat worn by Hasidic men on Shabbat and holidays, not a slang/flavor word. Doesn't fit "sprinkle into a sentence" usage the way the others do, so it's omitted from the active rotation. Can add it as a glossary-only cultural reference if wanted.
+
+## History of Yiddish (context, not a word)
+
+Yiddish emerged around the 9th–10th century among Ashkenazi Jews in the Holy Roman Empire, built on a Middle High German base with Hebrew/Aramaic, and later Slavic, vocabulary layered in as communities moved east into Poland, Lithuania, and Russia. Written in the Hebrew alphabet. By the early 20th century it had ~11–13 million speakers worldwide; the Holocaust and postwar assimilation cut that sharply, though it survives as a first language in many Hasidic communities and has had a secular revival in academia and popular culture. Most of the words in this list survive in English primarily through 20th-century American Jewish comedy, Borscht Belt entertainers, and later shows like Seinfeld — worth knowing so users understand why these words carry a particular comedic/informal register in English, not a neutral one.
