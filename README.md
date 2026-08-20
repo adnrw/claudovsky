@@ -56,6 +56,10 @@ https://raw.githubusercontent.com/adnrw/claudovsky/main/skills/yiddish/reference
 
 The workaround, wired into every packaging above: each instruction set tells the assistant to fetch the raw URL above once per conversation if it has a web-fetch/browsing tool available, and fall back to its bundled/pasted word list if not. This is best-effort, not guaranteed — depends on that tool being enabled on the user's account, adds a small amount of latency, and a model could in principle skip it. It's the closest thing to "update the file and everyone just gets it," but it is not a hard guarantee the way a real package manager would be.
 
+## License
+
+CC BY-NC-SA 4.0 — see [`LICENSE`](./LICENSE). Worth noting: CC licenses are built for creative/content works, not code, but this repo is almost entirely instructions and word lists rather than software, so it fits fine. If you ever add actual code (scripts, an MCP server, etc.), that would sit oddly under a CC license — flag it if that happens and we can split licenses per-directory.
+
 ## Status / TODO
 
 - [ ] Push this repo to GitHub (`adnrw/claudovsky`) — not yet pushed as of writing this

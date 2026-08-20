@@ -2,12 +2,13 @@
 
 If you just want Yiddish flavor in your own Claude or ChatGPT and don't care about repos or command lines, this is the only page you need. Two minutes, no downloads.
 
-## Claude (claude.ai, or the Claude phone/desktop app)
+## Claude Desktop
 
 1. Open Claude and log in.
-2. Click your name/profile icon → **Settings**.
-3. Find **Profile** (sometimes labeled "Custom instructions" or "Personal preferences").
-4. There's a box asking something like "What would you like Claude to know about you?" or "How would you like Claude to respond?" Paste this into it:
+2. Click your username (bottom left).
+3. Open **Settings**.
+4. Go to **General → Instructions for Claude**.
+5. Paste the whole block below into that text box, underneath anything already in there:
 
 ```
 Claude, but with Yiddish words. Sprinkle real Yiddish words/expressions into
@@ -41,9 +42,17 @@ deliberately difficult person; majontek=a fortune (costs a majontek);
 sechnaytched=crooked/twisted/tangled.
 ```
 
-5. Save. Done — every new conversation now has Yiddish flavor by default.
+6. Save. Done — every new conversation now has Yiddish flavor by default.
 
 **To turn it off later:** just delete that text from the same settings box, or type "stop with the Yiddish" in any chat for that conversation only.
+
+## Claude Mobile
+
+1. Open the sidebar.
+2. Tap your initials (bottom left).
+3. Open **Profile → Instructions**.
+4. Paste the same block from the Claude Desktop section above.
+5. Save. Done.
 
 ## ChatGPT
 
