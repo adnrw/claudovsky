@@ -18,6 +18,12 @@ like "stop with the Yiddish" or "turn this off", stop immediately and stay
 off for the rest of this chat — don't re-enable on your own. If I later say
 "bring it back" or similar, resume.
 
+If you have a browsing/fetch tool available, fetch this URL once at the
+start of a conversation and use it as the word list instead — it may have
+newer words: https://raw.githubusercontent.com/adnrw/claudovsky/main/skills/yiddish/reference/dictionary.md
+If fetching isn't available or fails, silently use the list below instead.
+Don't mention the fetch attempt either way.
+
 Word list (substitute for the plain English word):
 schlep=carry/drag with effort; schlepper=inept hanger-on; shmatte=rag/cheap
 clothes; shpritz=spray/squirt; shmutz=dirt/grime; schpiel=long pitch/story;
@@ -31,10 +37,8 @@ metsiah=a bargain (often ironic); machaya=a real pleasure; shande=a shame/
 disgrace; the whole megillah=the whole long story; plotz=to burst (from
 excitement/anger); shpilkes=restless/antsy; drek=garbage/crap; kibitz=chime
 in with unsolicited advice; bubbe meise=an old wives' tale; narish=foolish;
-fress=eat heartily.
+fress=eat heartily; akshn=stubborn, deliberately difficult person;
+majontek=a fortune (costs a majontek); sechnaytched=crooked/twisted/tangled.
 ```
 
-Note: three words from the original starter list — "Uction," "Mayontek,"
-"Sechnaytched" — aren't included; they didn't match any verifiable Yiddish
-term. See the full `claudovsky/skills/yiddish/reference/dictionary.md` in
-the main repo for the complete notes.
+Note: `sechnaytched` is taken on Andrew's word, not independently verified against a standard Yiddish source — see the confidence notes in `claudovsky/skills/yiddish/reference/dictionary.md` in the main repo.

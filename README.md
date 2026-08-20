@@ -34,26 +34,32 @@ chatgpt/
 ## Installing (Claude Code)
 
 ```
-/plugin marketplace add <your-github-username>/claudovsky
+/plugin marketplace add adnrw/claudovsky
 /plugin install claudovsky@claudovsky-marketplace
 ```
 
 Then either invoke `/claudovsky:yiddish` at the start of a session, or set up the always-on snippet above.
 
-*(Replace `<your-github-username>/claudovsky` with the actual GitHub path once this repo is pushed — no remote is set yet.)*
-
 ## Installing (Cowork / claude.ai)
 
-Cowork installs plugins from the same marketplace repo format. Point Cowork's plugin/marketplace add flow at this repo's URL, same as above. This hasn't been tested end-to-end yet — verify once the repo is public.
+Cowork installs plugins from the same marketplace repo format. Point Cowork's plugin/marketplace add flow at `adnrw/claudovsky`. This hasn't been tested end-to-end yet — verify once the repo is public.
 
-## Extending the dictionary
+## Updating the dictionary
 
-Edit `skills/yiddish/reference/dictionary.md`. Three words from the original starter list — "Uction," "Mayontek," "Sechnaytched" — couldn't be matched to a verified Yiddish term and were left out rather than guessed at; see the "Flagged" section in that file.
+Edit `skills/yiddish/reference/dictionary.md` and push. That's the single source of truth, published at:
+
+```
+https://raw.githubusercontent.com/adnrw/claudovsky/main/skills/yiddish/reference/dictionary.md
+```
+
+**No install today gives fully silent, zero-action updates.** Claude Code plugin marketplaces don't auto-refresh (multiple open feature requests for this: [#51350](https://github.com/anthropics/claude-code/issues/51350), [#38271](https://github.com/anthropics/claude-code/issues/38271), [#31462](https://github.com/anthropics/claude-code/issues/31462)) — plugin users need `/plugin marketplace update` manually. And a pasted Custom Instructions/Custom GPT block is static text; it never re-fetches on its own.
+
+The workaround, wired into every packaging above: each instruction set tells the assistant to fetch the raw URL above once per conversation if it has a web-fetch/browsing tool available, and fall back to its bundled/pasted word list if not. This is best-effort, not guaranteed — depends on that tool being enabled on the user's account, adds a small amount of latency, and a model could in principle skip it. It's the closest thing to "update the file and everyone just gets it," but it is not a hard guarantee the way a real package manager would be.
 
 ## Status / TODO
 
-- [ ] Push this repo to GitHub and set a remote
+- [ ] Push this repo to GitHub (`adnrw/claudovsky`) — not yet pushed as of writing this
 - [ ] Confirm exact install command syntax against current Claude Code docs (verified against docs.claude.com as of Aug 2026, but plugin CLI syntax is young and may shift)
 - [ ] Test Cowork install path directly — README currently assumes parity with Claude Code, unverified
-- [ ] Resolve the three flagged dictionary words
+- [ ] Verify the live-fetch-on-conversation-start instruction actually fires reliably in practice, across Claude and ChatGPT — untested, best-effort only
 - [ ] Decide whether to add a LICENSE (MIT is referenced in plugin.json but no LICENSE file exists yet)
