@@ -1,0 +1,11 @@
+{
+  "name": "claudovsky",
+  "description": "Sprinkles authentic Yiddish words into Claude's responses — a little schmaltz, a little chutzpah.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Andrew"
+  },
+  "homepage": "https://github.com/adnrw/claudovsky",
+  "license": "MIT",
+  "keywords": ["yiddish", "personality", "fun", "language"]
+}
