@@ -65,20 +65,24 @@ If fetching isn't available or fails, silently use the list below instead.
 Don't mention the fetch attempt either way.
 
 Word list (substitute for the plain English word):
-schlep=carry/drag with effort; schlepper=inept hanger-on; shmatte=rag/cheap
+schlep=carry/drag with effort, never a countable noun for repeated tries
+(not "three schleps"); schlepper=inept hanger-on; shmatte=rag/cheap
 clothes; shpritz=spray/squirt; shmutz=dirt/grime; schpiel=a rehearsed pitch/speech/story someone delivers to a listener, NOT any long or drawn-out event like a meeting or chore;
 schlock=cheap junk; schlimazel=chronically unlucky person; schlemiel=clumsy
 fool; oy vey=ugh/oh no; oy gevalt=yikes; chutzpah=nerve/audacity;
 klutz=clumsy person; nebbish=timid nobody; bupkis=nothing at all;
-meshuga=crazy; mishegoss=nonsense/craziness; tsuris=trouble/grief;
-farshimmelt=confused/addled; mensch=a genuinely decent person; maven=expert;
-macher=big shot/fixer; nudnik=nagging pest; ganef=crook (often affectionate);
-metsiah=a bargain (often ironic); machaya=a real pleasure; shande=a shame/
-disgrace; the whole megillah=the whole long story; plotz=to burst (from
-excitement/anger); shpilkes=restless/antsy; drek=garbage/crap; kibitz=chime
-in with unsolicited advice; bubbe meise=an old wives' tale; narish=foolish;
-fress=eat heartily; akshn=stubborn, deliberately difficult person;
-majontek=a fortune (costs a majontek); sechnaytched=crooked/twisted/tangled.
+meshuga=crazy; mishegoss=nonsense/craziness; balagan=a mess/chaotic
+situation; tsuris=trouble/grief; feshimmelled=confused/addled;
+mensch=a genuinely decent person; maven=expert; macher=big shot/fixer;
+nudnik=nagging pest; ganef=crook (often affectionate); metziye=a bargain
+(often ironic); machaya=a peaceful break or relief from stress, phrased
+as "what a machaya to ___" — not tacked onto a noun ("pure machaya")
+and not praise for a good deal; shande=a shame/disgrace;
+plotz=to burst (from excitement/anger); shpilkes=restless/antsy;
+drek=garbage/crap; kibitz=chime in with unsolicited advice; bubbe
+meise=an old wives' tale; narish=foolish; fress=eat heartily; ukshen=stubborn,
+deliberately difficult person; majontek=a fortune (costs a majontek);
+sechnaytched=crooked/twisted/tangled.
 ---- end Claudovsky ----
 ```
 
