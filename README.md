@@ -1,45 +1,40 @@
 # Claudovsky
 
-Sprinkles real Yiddish words into an AI assistant's responses. Default behavior is always-on, with three switchable intensity levels (Nebbish / Mensch / Macher) and a spoken toggle to turn it off and back on. A session-based opt-in mode is also available for people who don't want it running by default.
+Claude, ChatGPT, or Gemini — but with Yiddish words sprinkled naturally into its answers.
 
-Organized by assistant — each is packaged and documented independently, since Claude and ChatGPT have genuinely different customization mechanisms (no shared "plugin" concept between them):
+**Before:** "The sales guy gave us his whole pitch about why we should switch vendors."
+**After:** "The sales guy gave us his whole schpiel about why we should switch vendors — total tsuris."
 
-```
-claude/       # Claude Code plugin, marketplace listing, CLAUDE.md snippet,
-              # and the non-technical Claude Desktop/Mobile install path
-chatgpt/      # Custom Instructions (always-on) and Custom GPT (session-based)
-dictionary/   # dictionary.md — the single canonical, editable word list,
-              # fetched live by both packagings when possible (see below)
-LICENSE       # CC BY-NC-SA 4.0
-```
+Three intensity levels, switchable anytime just by asking:
 
-**Not a developer?** Go straight to [`claude/EASY-INSTALL.md`](./claude/EASY-INSTALL.md) or [`chatgpt/custom-instructions-snippet.md`](./chatgpt/custom-instructions-snippet.md) depending which you use. Copy-paste into a settings box, no GitHub account, no terminal, works on phone/web/desktop. That's the actual product for most people.
+- **Nebbish** — light touch, a word here and there
+- **Mensch** — a word or two per paragraph
+- **Macher** — a word in most sentences
 
-Everything else (`claude/.claude-plugin/`, `claude/skills/`, ChatGPT's Custom GPT path) is developer/power-user packaging — for people who use Claude Code, want a shareable one-click install for a group, or want to publish this on a marketplace/GPT Store.
+Turn it off anytime by saying "stop with the Yiddish"; bring it back the same way.
 
-No tools, no external API calls beyond the optional live dictionary fetch — this only changes word choice and tone, so it works entirely offline once installed if fetching isn't available.
+## Two flavors, every platform
 
-## Updating the dictionary
+**Always-on:** paste once into your account settings, and it applies to every new conversation from then on by default.
 
-Edit `dictionary/dictionary.md` and push. That's the single source of truth, published at:
+**Per-session:** off by default; you turn it on for one conversation at a time and it doesn't touch your regular chats.
 
-```
-https://raw.githubusercontent.com/adnrw/claudovsky/main/dictionary/dictionary.md
-```
+| Platform | Always-on | Per-session |
+|---|---|---|
+| Claude | [`claude/always-on.md`](./claude/always-on.md) — paste into Settings → Instructions for Claude | [`claude/per-session.md`](./claude/per-session.md) — upload the `.skill` file via Settings → Skills, then say "talk Yiddish" or `/claudovsky` |
+| ChatGPT | [`chatgpt/always-on.md`](./chatgpt/always-on.md) — paste into Settings → Personalization → Custom Instructions | [`chatgpt/per-session.md`](./chatgpt/per-session.md) — build/open the shared "Claudovsky" Custom GPT |
+| Gemini | [`gemini/always-on.md`](./gemini/always-on.md) — paste into Saved info | [`gemini/per-session.md`](./gemini/per-session.md) — build/open the shared "Claudovsky" Gem |
 
-**No install today gives fully silent, zero-action updates.** Claude Code plugin marketplaces don't auto-refresh (multiple open feature requests for this: [#51350](https://github.com/anthropics/claude-code/issues/51350), [#38271](https://github.com/anthropics/claude-code/issues/38271), [#31462](https://github.com/anthropics/claude-code/issues/31462)) — plugin users need `/plugin marketplace update` manually. And a pasted Custom Instructions/Custom GPT block is static text; it never re-fetches on its own.
+Each platform's page has the full copy-paste block and exact settings location. None of these are true one-click GitHub installs — every path needs one manual paste or upload, once, because none of Claude, ChatGPT, or Gemini currently offer a GitHub-triggered install for this kind of thing.
 
-The workaround, wired into every packaging: each instruction set tells the assistant to fetch the raw URL above once per conversation if it has a web-fetch/browsing tool available, and fall back to its bundled/pasted word list if not. This is best-effort, not guaranteed. One real gap: `claude/skills/yiddish/reference/dictionary.md` is a bundled offline copy of the same file and is **not** auto-synced from `dictionary/dictionary.md` — update both by hand, or the bundled fallback drifts stale for anyone without web-fetch.
+## The word list
+
+Every word it's allowed to use, with meanings, lives in [`dictionary/dictionary.md`](./dictionary/dictionary.md). It only uses words from that list — nothing invented. Where a page's copy-paste block or Custom GPT/Gem has a web-fetch tool available, it fetches this file fresh once per conversation for the latest words; otherwise it falls back to the list baked into that page.
+
+## For developers
+
+The Claude Code plugin lives at the repo root (`.claude-plugin/`, `skills/`) — that's the standard, documented location Claude Code expects, and what makes `/plugin marketplace add adnrw/claudovsky` work. See [`claude/README.md`](./claude/README.md) for plugin/marketplace details, [`chatgpt/README.md`](./chatgpt/README.md) and [`gemini/README.md`](./gemini/README.md) for how those two platforms' non-plugin packaging works.
 
 ## License
 
-CC BY-NC-SA 4.0 — see [`LICENSE`](./LICENSE). Worth noting: CC licenses are built for creative/content works, not code, but this repo is almost entirely instructions and word lists rather than software, so it fits fine. If you ever add actual code (scripts, an MCP server, etc.), that would sit oddly under a CC license — flag it if that happens and we can split licenses per-directory.
-
-## Status / TODO
-
-- [ ] Push this repo to GitHub (`adnrw/claudovsky`) — not yet pushed as of writing this
-- [ ] Confirm exact install command syntax against current Claude Code docs (verified against docs.claude.com as of Aug 2026, but plugin CLI syntax is young and may shift)
-- [ ] Verify Claude Code's plugin loader actually resolves a nested plugin root (`claude/.claude-plugin/plugin.json` via a `git-subdir` marketplace entry) — untested since the reorg, was previously at repo root
-- [ ] Test Cowork install path directly — assumes parity with Claude Code, unverified
-- [ ] Verify the live-fetch-on-conversation-start instruction actually fires reliably in practice, across Claude and ChatGPT — untested, best-effort only
-- [ ] Set up a way to keep `dictionary/dictionary.md` and `claude/skills/yiddish/reference/dictionary.md` in sync automatically instead of by hand
+CC BY-NC-SA 4.0 — see [`LICENSE`](./LICENSE).

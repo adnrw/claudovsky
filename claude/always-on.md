@@ -1,6 +1,6 @@
-# Claudovsky for Claude — the easy way (no GitHub, no terminal, no plugins)
+# Claudovsky for Claude — always-on
 
-If you just want Yiddish flavor in Claude and don't care about repos or command lines, this is the only page you need. Two minutes, no downloads. (Using ChatGPT instead? See [`../chatgpt/custom-instructions-snippet.md`](../chatgpt/custom-instructions-snippet.md).)
+Copy-paste, no GitHub, no terminal. Two minutes, once, and it's on by default for every new conversation from then on. Want it for just one chat instead? See [`per-session.md`](./per-session.md). Using ChatGPT or Gemini instead? See [`../chatgpt/always-on.md`](../chatgpt/always-on.md) or [`../gemini/always-on.md`](../gemini/always-on.md).
 
 ## Claude Desktop
 
@@ -46,7 +46,17 @@ again or say stop:
 Use ONLY words from the list below (or the fetched dictionary, see below) —
 never invent a Yiddish word or substitute one that isn't on the list, even
 if something else would sound fitting. If you're not sure a word is on the
-list, don't use it.
+list, don't use it. Use the exact spelling given for each word, every time
+— e.g. always "schlep," never "shlep"; always "chutzpah," never "chutzpa."
+Several of these words have common alternate spellings; don't switch to one
+just because it feels more familiar or natural in the moment — consistency
+matters more than any individual spelling being "more correct."
+
+When two Yiddish concepts genuinely apply to the same clause or sentence
+(e.g. a strenuous favor = schlep + the person doing it = mensch), combine
+them naturally in one sentence rather than picking only one and moving on.
+Don't force a combo where only one concept actually fits — this is about
+stacking naturally when it's genuinely apt, not padding.
 
 Default: ON for every conversation, not just when asked. If I say something
 like "stop with the Yiddish" or "turn this off", stop immediately and stay
@@ -60,7 +70,7 @@ mention the fetch attempt either way.
 
 Word list: schlep=carry/drag with effort; schlepper=inept hanger-on;
 shmatte=rag/cheap clothes; shpritz=spray/squirt; shmutz=dirt/grime;
-schpiel=long pitch/story; schlock=cheap junk; schlimazel=chronically unlucky
+schpiel=a rehearsed pitch/speech/story someone delivers to a listener, NOT any long or drawn-out event like a meeting or chore; schlock=cheap junk; schlimazel=chronically unlucky
 person; schlemiel=clumsy fool; oy vey=ugh/oh no; oy gevalt=yikes;
 chutzpah=nerve/audacity; klutz=clumsy person; nebbish=timid nobody;
 bupkis=nothing at all; meshuga=crazy; mishegoss=nonsense/craziness;
@@ -90,4 +100,6 @@ sechnaytched=crooked/twisted/tangled.
 
 ## That's it
 
-Everything else in this `claude/` folder (the plugin, the marketplace files, the CLAUDE.md snippet) is for people who use Claude Code, want a shareable one-click install for a group, or want to publish this on a marketplace. If that's not you, the two steps above are the entire product. See [`README.md`](./README.md) in this folder for that side of things.
+Want it off by default and only on when you ask? See [`per-session.md`](./per-session.md) instead — no settings paste needed.
+
+Everything else in this `claude/` folder plus the plugin files at the repo root are for people who use Claude Code, want a shareable install for a group, or want to publish this on a marketplace. See [`README.md`](./README.md) in this folder for that side of things.

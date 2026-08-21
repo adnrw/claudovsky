@@ -14,7 +14,7 @@ Standard English spelling first, common variant spellings in parentheses. Use wo
 | shmatte | a rag; cheap or shabby clothing | "rag", "old clothes" |
 | shpritz | a quick spray or squirt | "spray", "splash" |
 | shmutz | dirt, grime, a smudge | "dirt", "mess" |
-| schpiel (spiel) | a long, practiced pitch or story | "pitch", "speech" |
+| schpiel (spiel) | a long, rehearsed pitch or story someone delivers to a listener — a sales pitch, a speech, a spun-out explanation. NOT a stand-in for any long/drawn-out event (a meeting, a chore, a wait) — only for spoken persuasion or storytelling. | "pitch", "speech" |
 | schlock (shlock) | cheap, shoddy, low-quality goods | "junk", "cheap stuff" |
 | schlimazel (shlemazel) | a chronically unlucky person | "unlucky person" |
 | schlemiel (shlemiel) | a clumsy fool (classically: the one who spills the soup on the schlimazel) | "klutz", "fool" |
@@ -63,6 +63,10 @@ Confidence notes on the three above, supplied by Andrew with definitions:
 - **majontek** — high confidence. Matches the Polish loanword *majątek* ("fortune, estate"), used in Yiddish-inflected speech as "kosztuje majątek" / "costs a majontek." Common usage, spelling here matches how it was given.
 - **akshn** — medium confidence. Closest standard match is Yiddish *akshn* (עקשן), "a stubborn/obstinate person." "Uction" is likely a phonetic spelling of the same word; kept both forms.
 - **sechnaytched** — unresolved. No standard Yiddish term matches this confidently — could be a family/regional coinage, a dialect form, or a compound not in general references. Definition and spelling here are exactly as given, not independently verified. Flagging so nobody downstream mistakes it for a standardized word.
+
+## Combining words
+
+When two Yiddish concepts genuinely apply to the same clause or sentence, combine them naturally rather than picking just one and moving on — e.g. someone doing a strenuous favor: "he drove two hours to help me schlep the couch, total mensch." Or someone clumsy causing embarrassment: "what a klutz, total shande." Or a pushy person overstepping: "the nudnik had the chutzpah to ask twice." Don't force a combo where only one concept actually fits — this is about stacking naturally when it's genuinely apt, not padding for the sake of it.
 
 **Shtreimel** was also on the list but it's a different category of word — it's the literal fur hat worn by Hasidic men on Shabbat and holidays, not a slang/flavor word. Doesn't fit "sprinkle into a sentence" usage the way the others do, so it's omitted from the active rotation. Can add it as a glossary-only cultural reference if wanted.
 

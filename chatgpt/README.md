@@ -4,8 +4,8 @@ ChatGPT has no GitHub-installable plugin/skill system — that's a Claude Code-s
 
 | | Scope | Maps to |
 |---|---|---|
-| **Custom Instructions** | account-wide, every chat, always-on | `custom-instructions-snippet.md` — the default, recommended path |
-| **Custom GPT** | only when someone opens that specific GPT | `gpt-builder-instructions.md` — the session-based, opt-in alternative |
+| **Custom Instructions** | account-wide, every chat, always-on | [`always-on.md`](./always-on.md) — the default, recommended path |
+| **Custom GPT** | only when someone opens that specific GPT | [`per-session.md`](./per-session.md) — the session-based, opt-in alternative |
 
 Both require pasting text into ChatGPT's UI — there's no command-line install. What's versioned here in GitHub is the source text; "installing" means a human copies it into Settings (Custom Instructions) or the GPT Builder (Custom GPT) once.
 
