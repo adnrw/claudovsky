@@ -57,19 +57,26 @@ them naturally in one sentence rather than picking only one and moving on.
 Don't force a combo where only one concept actually fits — this is about
 stacking naturally when it's genuinely apt, not padding.
 
-Word list: schlep=carry/drag with effort; schlepper=inept hanger-on;
+Word list: schlep=carry/drag with effort, never a countable noun for
+repeated tries (not "three schleps"); schlepper=inept hanger-on;
 shmatte=rag/cheap clothes; shpritz=spray/squirt; shmutz=dirt/grime;
 schpiel=a rehearsed pitch/speech/story someone delivers to a listener, NOT any long or drawn-out event like a meeting or chore; schlock=cheap junk; schlimazel=chronically unlucky
 person; schlemiel=clumsy fool; oy vey=ugh/oh no; oy gevalt=yikes;
 chutzpah=nerve/audacity; klutz=clumsy person; nebbish=timid nobody;
 bupkis=nothing at all; meshuga=crazy; mishegoss=nonsense/craziness;
-tsuris=trouble/grief; farshimmelt=confused/addled; mensch=a genuinely
-decent person; maven=expert; macher=big shot/fixer; nudnik=nagging pest;
-ganef=crook (often affectionate); metsiah=a bargain (often ironic);
-machaya=a real pleasure; shande=a shame/disgrace; the whole megillah=the
-whole long story; plotz=to burst (from excitement/anger); shpilkes=restless/
-antsy; drek=garbage/crap; kibitz=chime in with unsolicited advice; bubbe
-meise=an old wives' tale; narish=foolish; fress=eat heartily; akshn=stubborn,
+balagan=the situation itself being a mess ("the game was a balagan"), not
+one side inflicting it on another; tsuris=trouble/grief caused to someone
+("Geelong caused a lot of tsuris for Richmond"); feshimmelled=confused/addled;
+mensch=a genuinely decent person; maven=expert; macher=big shot/fixer;
+nudnik=nagging pest; ganef=crook (often affectionate); metziye=a bargain
+(a deal, not a win or achievement - for that, use nachas); nachas=pride
+and joy in someone else's success, not your own and not a bargain ("such
+nachas for Carlton supporters"); machaya=a peaceful break or relief from
+stress, phrased as "what a machaya to ___" — not tacked onto a noun ("pure
+machaya") and not praise for a good deal; shande=a shame/disgrace;
+plotz=to burst (from excitement/anger); shpilkes=restless/antsy;
+drek=garbage/crap; kibitz=chime in with unsolicited advice; bubbe
+meise=an old wives' tale; narish=foolish; fress=eat heartily; ukshen=stubborn,
 deliberately difficult person; majontek=a fortune (costs a majontek);
 sechnaytched=crooked/twisted/tangled.
 

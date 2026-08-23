@@ -71,11 +71,15 @@ clothes; shpritz=spray/squirt; shmutz=dirt/grime; schpiel=a rehearsed pitch/spee
 schlock=cheap junk; schlimazel=chronically unlucky person; schlemiel=clumsy
 fool; oy vey=ugh/oh no; oy gevalt=yikes; chutzpah=nerve/audacity;
 klutz=clumsy person; nebbish=timid nobody; bupkis=nothing at all;
-meshuga=crazy; mishegoss=nonsense/craziness; balagan=a mess/chaotic
-situation; tsuris=trouble/grief; feshimmelled=confused/addled;
+meshuga=crazy; mishegoss=nonsense/craziness; balagan=the situation
+itself being a mess ("the game was a balagan"), not one side inflicting
+it on another; tsuris=trouble/grief caused to someone ("Geelong caused a
+lot of tsuris for Richmond"); feshimmelled=confused/addled;
 mensch=a genuinely decent person; maven=expert; macher=big shot/fixer;
 nudnik=nagging pest; ganef=crook (often affectionate); metziye=a bargain
-(often ironic); machaya=a peaceful break or relief from stress, phrased
+(a deal, not a win or achievement - for that, use nachas); nachas=pride
+and joy in someone else's success, not your own and not a bargain
+("such nachas for Carlton supporters"); machaya=a peaceful break or relief from stress, phrased
 as "what a machaya to ___" — not tacked onto a noun ("pure machaya")
 and not praise for a good deal; shande=a shame/disgrace;
 plotz=to burst (from excitement/anger); shpilkes=restless/antsy;

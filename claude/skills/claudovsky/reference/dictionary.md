@@ -28,12 +28,12 @@ Standard English spelling first, common variant spellings in parentheses. Use wo
 | bupkis | nothing at all | "nothing", "zilch" |
 | meshuga (meshugge, meshuggeh) | crazy | "crazy", "insane" |
 | mishegoss (mishegas) | craziness, nonsense, foolish chaos | "nonsense", "craziness" |
-| balagan | a mess, a chaotic jumble of a situation | "mess", "chaos" |
+| balagan | a mess, a chaotic jumble of a situation. Describes the situation itself — "the game was a balagan" — not something one side inflicts on another ("put on a balagan for"). For one side causing the other grief (e.g. a lopsided loss), that's "tsuris" instead — "Geelong caused a lot of tsuris for Richmond." | "mess", "chaos" |
 | tsuris | troubles, grief, woes | "trouble", "grief" |
 | meshuggener / meshuggeneh | a crazy person (m./f.) | "a lunatic" |
 | lobbes | a slob, a lump — someone unkempt, lazy, or clumsy (not a mischief-maker; for a pest/troublemaker use "nudnik") | "slob", "lump" |
 | feshimmelled (farshimmelt) | fuddled, addled, out of sorts | "confused", "out of it" |
-| l'chaim (lachayim) | "to life" — a toast | "cheers" |
+| l'chaim (lachayim) | "to life" — a toast. Phrase it as "a [proper/real] l'chaim for ___," not "l'chaim to ___" — e.g. "a proper l'chaim for his final game." | "cheers" |
 | mensch | a person of integrity and decency | "a good person" |
 | maven | an expert, a connoisseur | "expert", "pro" |
 | macher | a big shot; someone with real pull who gets things done — sincere, not mocking. For a sarcastic/ironic "big shot," use "groyse" instead. | "big shot", "power player" |
@@ -43,7 +43,8 @@ Standard English spelling first, common variant spellings in parentheses. Use wo
 | groyse (groyser) | "big one" — a child, usually the older or oldest sibling. Refers to kids, not workplace status or self-importance — for a genuine big shot, use "macher." | "the big one", "the eldest" |
 | bubba (bubbe) | grandma. Used on its own, never fused with "zaida" into one term ("bubbe zeide") — that's like saying "grandma grandpa." | "grandma", "gran" |
 | zaida (zeide) | grandpa. Same rule as "bubba" — used on its own, not fused with it. | "grandpa", "gramps" |
-| metziye (metsiah) | a bargain, a great find (often ironic — "some bargain") | "bargain", "steal" |
+| metziye (metsiah) | a bargain, a great find on a purchase or deal (often ironic — "some bargain") — not for a win or achievement, that's "nachas" | "bargain", "steal" |
+| nachas | pride and joy taken in someone else's success or good fortune — "such nachas for Carlton supporters seeing their team beat the ladder leaders." Not for your own win, and not for a bargain, that's "metziye" | "such pride", "what a joy" |
 | machaya | a peaceful break or moment of relief from something stressful or busy — not generic praise for a good deal, product, or purchase. Phrase it as "what a machaya to ___," not as a modifier tacked onto a noun (not "pure machaya"). E.g. "what a machaya to finally close my laptop at 6 when the kids won't be home till 6:30." | "a real break", "a relief" |
 | shande | a shame, a disgrace, a scandal | "a shame", "disgraceful" |
 | plotz (plutz) | to burst — from excitement, anger, or exhaustion | "I could scream/collapse" |
