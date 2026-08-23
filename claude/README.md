@@ -4,27 +4,31 @@ Not a developer? Start at [`always-on.md`](./always-on.md) (settings paste, on b
 
 ## What's in here
 
-The actual installable plugin (`.claude-plugin/plugin.json`, `skills/claudovsky/`) lives at the **repo root**, not in this folder — that's the standard, documented Claude Code plugin structure, and it's what makes `/plugin marketplace add adnrw/claudovsky` reliable. This `claude/` folder holds the non-plugin, Claude-specific docs instead:
+The installable plugin (`.claude-plugin/plugin.json`, `skills/claudovsky/`) lives inside **this `claude/` folder**, not the repo root. The repo-root `.claude-plugin/marketplace.json` — which itself has to stay at the true repo root, that part isn't relocatable — points into this folder via a `git-subdir` source, so `/plugin marketplace add adnrw/claudovsky` resolves the plugin from here:
 
 ```
-always-on.md                 # non-technical path: Claude Desktop / Mobile Settings paste
-per-session.md                # non-technical path: Skills panel .skill upload, off by default
-snippets/
-  always-on-claude-md.md      # copy-paste snippet for CLAUDE.md — the always-on default
-                               # for Claude Code / Cowork specifically
-README.md                    # this file
+claude/
+  always-on.md                 # non-technical path: Claude Desktop / Mobile Settings paste
+  per-session.md                # non-technical path: Skills panel .skill upload, off by default
+  claudovsky.skill              # packaged .skill file for the Skills panel upload path
+  snippets/
+    always-on-claude-md.md      # copy-paste snippet for CLAUDE.md — the always-on default
+                                 # for Claude Code / Cowork specifically
+  .claude-plugin/
+    plugin.json                 # plugin manifest
+  skills/claudovsky/
+    SKILL.md                    # the instruction Claude follows (session-based mode)
+    reference/dictionary.md     # bundled fallback word list — canonical copy lives in
+                                 # dictionary/dictionary.md at the repo root; keep synced
+  README.md                    # this file
 ```
 
-The plugin itself, at repo root:
+The repo-root marketplace file (stays at root, points in here):
 
 ```
 .claude-plugin/
-  marketplace.json           # what /plugin marketplace add adnrw/claudovsky reads
-  plugin.json                 # plugin manifest
-skills/claudovsky/
-  SKILL.md                    # the instruction Claude follows (session-based mode)
-  reference/dictionary.md     # bundled fallback word list — canonical copy lives in
-                               # dictionary/dictionary.md at the repo root; keep synced
+  marketplace.json           # what /plugin marketplace add adnrw/claudovsky reads —
+                               # "source": "git-subdir", "path": "claude"
 ```
 
 ## Two ways this activates — default is always-on
@@ -44,12 +48,16 @@ Then either invoke `/claudovsky` at the start of a session, or set up the always
 
 *(Worth knowing: the bare `/claudovsky` form works because the skill's name matches the plugin's name and nothing else on your system claims that command name. If some other plugin or command you have installed already uses `/claudovsky`, Claude Code falls back to requiring the full `/claudovsky:claudovsky` form — outside our control, just how the namespacing works.)*
 
-This is now the standard plugin layout (manifest and skills at repo root, matching Claude Code's own examples) rather than the nested-subfolder structure this repo briefly used — that nested version relied on an unverified `git-subdir` marketplace trick and was never actually tested working. This version isn't clever, but it's the documented pattern, which matters more.
-
 ## Installing (Cowork / claude.ai)
 
 Cowork installs plugins from the same marketplace repo format. Point Cowork's plugin/marketplace add flow at `adnrw/claudovsky`. This hasn't been tested end-to-end yet — verify once the repo is public.
 
+## Why the plugin lives under `claude/`, not the repo root
+
+`.claude-plugin/marketplace.json`'s `source` field supports a `git-subdir` type specifically for this: pointing a marketplace entry at a subdirectory of the same repo, so the plugin doesn't have to sit at the repo root of a multi-platform doc repo like this one. This is Anthropic's documented, standard approach for marketplace entries (see [Create and distribute a plugin marketplace](https://code.claude.com/docs/en/plugin-marketplaces.md)) — not a workaround. `marketplace.json` itself is the one file that can't move; it has to stay at the true repo root for `/plugin marketplace add owner/repo` to find it.
+
+*(This restructure — `plugin.json` and `skills/claudovsky/` moved from repo root into `claude/`, `marketplace.json`'s `path` updated from `"."` to `"claude"` — hasn't been verified end-to-end yet with a real `/plugin marketplace add adnrw/claudovsky` against the pushed repo. Worth doing that check before treating this as confirmed working.)*
+
 ## Keeping the bundled dictionary in sync
 
-`skills/claudovsky/reference/dictionary.md` (repo root) is a bundled offline fallback — it ships inside the plugin itself so it works even without live web-fetch. The canonical, editable copy is `dictionary/dictionary.md`, also at the repo root. There's no automated sync between the two yet; when you update the dictionary, copy it to both places, or this bundled copy will silently drift out of date for anyone without web-fetch access.
+`skills/claudovsky/reference/dictionary.md` (in this folder) is a bundled offline fallback — it ships inside the plugin itself so it works even without live web-fetch. The canonical, editable copy is `dictionary/dictionary.md` at the repo root. There's no automated sync between the two yet; when you update the dictionary, copy it to both places, or this bundled copy will silently drift out of date for anyone without web-fetch access.

@@ -33,7 +33,7 @@ Every word it's allowed to use, with meanings, lives in [`dictionary/dictionary.
 
 ## For developers
 
-The Claude Code plugin lives at the repo root (`.claude-plugin/`, `skills/`) — that's the standard, documented location Claude Code expects, and what makes `/plugin marketplace add adnrw/claudovsky` work. See [`claude/README.md`](./claude/README.md) for plugin/marketplace details, [`chatgpt/README.md`](./chatgpt/README.md) and [`gemini/README.md`](./gemini/README.md) for how those two platforms' non-plugin packaging works.
+The Claude Code plugin itself (`.claude-plugin/plugin.json`, `skills/`) lives inside [`claude/`](./claude/), not the repo root. Only `.claude-plugin/marketplace.json` stays at the true repo root — it points into `claude/` via a `git-subdir` source, which is what makes `/plugin marketplace add adnrw/claudovsky` work. See [`claude/README.md`](./claude/README.md) for the full plugin/marketplace details, [`chatgpt/README.md`](./chatgpt/README.md) and [`gemini/README.md`](./gemini/README.md) for how those two platforms' non-plugin packaging works.
 
 ## License
 

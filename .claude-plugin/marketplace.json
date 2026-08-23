@@ -11,7 +11,7 @@
       "description": "Sprinkles Yiddish words into Claude's responses.",
       "source": {
         "source": "git-subdir",
-        "path": "."
+        "path": "claude"
       },
       "category": "fun"
     }
