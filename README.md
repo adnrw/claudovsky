@@ -1,6 +1,6 @@
 # Claudovsky
 
-Claude, ChatGPT, or Gemini — but with Yiddish words sprinkled naturally into its answers.
+A bissel Yiddish in your Claude (or equivalent)
 
 **Before:** "Cripps had 27 touches and 2 goals, the captain leading the way for his team.
 
