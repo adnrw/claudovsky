@@ -1,0 +1,50 @@
+name: Release
+
+# Triggered by pushing a version tag, e.g.:
+#   git tag v1.0.0 && git push origin v1.0.0
+# Builds the generated files fresh, packages each platform's folder into
+# its own zip, and attaches claude.zip / chatgpt.zip / gemini.zip to a
+# GitHub Release named after the tag.
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Build generated files
+        run: python3 src/build.py
+
+      - name: Fail if build produced uncommitted changes
+        run: |
+          if ! git diff --quiet; then
+            echo "::error::src/build.py changed tracked files — the committed"
+            echo "generated files are stale. Run 'python3 src/build.py' locally,"
+            echo "commit the result, then re-tag and push."
+            git diff --stat
+            exit 1
+          fi
+
+      - name: Package per-platform zips
+        run: python3 src/package.py
+
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/claude.zip
+            dist/chatgpt.zip
+            dist/gemini.zip
+          generate_release_notes: true
