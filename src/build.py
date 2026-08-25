@@ -15,13 +15,12 @@ Run from anywhere after editing any of the above, before committing:
     python3 src/build.py
 
 Generated (never hand-edit these — edit the sources above instead):
-  - claude/always-on.md, claude/per-session.md, claude/snippets/always-on-claude-md.md
+  - claude/always-on.md, claude/per-session.md
   - chatgpt/always-on.md, chatgpt/per-session.md
   - gemini/always-on.md, gemini/per-session.md
-  - claude/claudovsky/SKILL.md (Rules section only; wrapper comes from
-    src/install-steps/claude-skill-wrapper.md)
-  - claude/claudovsky/reference/dictionary.md (exact copy of the master)
-  - claude/claudovsky.skill (zipped fresh from claude/claudovsky/ every run)
+  - claude/claudovsky.skill — built entirely in memory, never unpacked to disk.
+    Its two entries (SKILL.md, reference/dictionary.md) are rendered as strings
+    from the same sources as everything else and written straight into the zip.
 
 NOT touched by this script (prose/overview pages, hand-maintained):
   README.md, claude/README.md, chatgpt/README.md, gemini/README.md
@@ -37,9 +36,6 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DICTIONARY = ROOT / "src" / "dictionary.md"
 RULES = ROOT / "src" / "rules.md"
 INSTALL_STEPS = ROOT / "src" / "install-steps"
-SKILL_DIR = ROOT / "claude" / "claudovsky"
-SKILL_MD = SKILL_DIR / "SKILL.md"
-SKILL_DICT = SKILL_DIR / "reference" / "dictionary.md"
 SKILL_ZIP = ROOT / "claude" / "claudovsky.skill"
 
 AUTO_HEADER = (
@@ -100,13 +96,6 @@ TARGETS = [
         sections=["opening_frame_session", "somber_exception", "hard_rule_death", "intensity_levels",
                   "word_list_only_session", "no_invented_phrases", "combining_words", "toggle_session"],
         embed_wordlist=True, wordlist_prefix="Word list:\n",
-    ),
-    dict(
-        name="claude-snippet", platform="Claude",
-        install_steps="claude-snippet.md", output="claude/snippets/always-on-claude-md.md",
-        sections=["opening_frame", "somber_exception", "hard_rule_death", "intensity_levels",
-                  "word_list_only_no_embed", "no_invented_phrases", "combining_words", "toggle"],
-        embed_wordlist=False,
     ),
     dict(
         name="claude-per-session", platform="Claude",
@@ -255,7 +244,6 @@ def main() -> int:
         skill_dict_content = dict_content[:end] + "\n" + dict_header_note + dict_content[end:]
     else:
         skill_dict_content = dict_content
-    write_if_changed(SKILL_DICT, skill_dict_content, changed)
 
     # 5: SKILL.md — wrapper (install-steps/claude-skill-wrapper.md) + generated Rules list.
     wrapper_path = INSTALL_STEPS / "claude-skill-wrapper.md"
@@ -265,17 +253,24 @@ def main() -> int:
     if "{{RULES_LIST}}" not in wrapper_text:
         raise ValueError(f"{wrapper_path} has no {{{{RULES_LIST}}}} placeholder")
     skill_md_content = wrapper_text.replace("{{RULES_LIST}}", render_skill_rules(rules))
-    write_if_changed(SKILL_MD, skill_md_content, changed)
 
-    # 6: repack claude/claudovsky.skill fresh from claude/claudovsky/.
-    # Built in memory (device_bash mounts can't delete files, so no temp-file
-    # dance) and only written to disk if the bytes actually changed.
+    # 6: repack claude/claudovsky.skill fresh, entirely in memory. No unpacked
+    # folder is ever written to disk — the two entries above are rendered as
+    # strings and written straight into the archive. A fixed date_time keeps
+    # the zip byte-for-byte reproducible when content hasn't changed (writestr
+    # defaults to the current wall-clock time, which would make every run
+    # look "changed" even with identical content).
     SKILL_ZIP.parent.mkdir(parents=True, exist_ok=True)
     buf = io.BytesIO()
     with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as zf:
-        for path in sorted(SKILL_DIR.rglob("*")):
-            if path.is_file():
-                zf.write(path, arcname="claudovsky/" + str(path.relative_to(SKILL_DIR)))
+        for arcname, content in (
+            ("claudovsky/SKILL.md", skill_md_content),
+            ("claudovsky/reference/dictionary.md", skill_dict_content),
+        ):
+            zi = zipfile.ZipInfo(arcname, date_time=(1980, 1, 1, 0, 0, 0))
+            zi.compress_type = zipfile.ZIP_DEFLATED
+            zi.external_attr = 0o644 << 16
+            zf.writestr(zi, content)
     new_bytes = buf.getvalue()
     old_bytes = SKILL_ZIP.read_bytes() if SKILL_ZIP.exists() else None
     if old_bytes != new_bytes:

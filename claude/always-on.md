@@ -89,6 +89,10 @@ majontek); sechnaytched=crooked/twisted/tangled.
 4. Paste the same block from the Claude Desktop section above.
 5. Save. Done.
 
+## Claude Code / Cowork alternative: CLAUDE.md
+
+Rather than (or in addition to) the account-wide Settings paste above, you can paste the same block into a project's `CLAUDE.md` (Claude Code: project or `~/.claude/CLAUDE.md` for global; Cowork: project instructions) instead — useful if you want it scoped to one project or shared with a team via the repo, rather than tied to your personal account. Same block, same steps, different paste target; nothing else changes.
+
 ## That's it
 
 Want it off by default and only on when you ask? See [`per-session.md`](./per-session.md) instead — no settings paste needed.
