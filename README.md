@@ -37,7 +37,7 @@ Each platform's page has the full copy-paste block and instructions on what to d
 
 ## Dictionary
 
-Every word Claudovsky is allowed to use (with definitions and usage examples) lives in [`dictionary/dictionary.md`](./dictionary/dictionary.md). 
+Every word Claudovsky is allowed to use (with definitions and usage examples) lives in [`src/dictionary.md`](./src/dictionary.md). 
 
 If your platform allows it, Claudovsky will check for dicitonary updates once per conversation for the latest words; otherwise it will use the list on your local machine.
 

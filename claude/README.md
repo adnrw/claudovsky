@@ -22,4 +22,4 @@ Then `/claudovsky` at the start of a session, or set up the always-on `CLAUDE.md
 
 ## Keeping the bundled dictionary in sync
 
-`dictionary/dictionary.md` at the repo root is the master copy. `skills/claudovsky/reference/dictionary.md` here, plus the compact word lists in every platform's `always-on.md`/`per-session.md`, are hand-propagated from it — update the root first, then copy the change out.
+`src/dictionary.md` at the repo root is the master copy. `skills/claudovsky/reference/dictionary.md` here, plus the compact word lists in every platform's `always-on.md`/`per-session.md`, are generated from it by `src/build.py` — edit `src/dictionary.md`, run the script, nothing else needs hand-editing.
