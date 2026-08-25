@@ -6,6 +6,4 @@ ChatGPT has no plugin/skill install mechanism — the closest things are Custom 
 
 {{INSTRUCTIONS_BLOCK}}
 
-Note: `sechnaytched` is taken on Andrew's word, not independently verified against a standard Yiddish source — see the confidence notes in [`../src/dictionary.md`](../src/dictionary.md).
-
-Want it off by default and only on for one chat instead? See [`per-session.md`](./per-session.md). Using Claude or Gemini? See [`../claude/always-on.md`](../claude/always-on.md) or [`../gemini/always-on.md`](../gemini/always-on.md).
+Want it off by default and only on for one chat instead? See [`per-session.md`](./per-session.md).

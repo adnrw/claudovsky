@@ -1,6 +1,6 @@
 # Claudovsky for Claude — always-on
 
-Copy-paste, no GitHub, no terminal. Two minutes, once, and it's on by default for every new conversation from then on. Want it for just one chat instead? See [`per-session.md`](./per-session.md). Using ChatGPT or Gemini instead? See [`../chatgpt/always-on.md`](../chatgpt/always-on.md) or [`../gemini/always-on.md`](../gemini/always-on.md).
+Copy-paste, no GitHub, no terminal. Two minutes, once, and it's on by default for every new conversation from then on. Want it for just one chat instead? See [`per-session.md`](./per-session.md).
 
 ## Claude Desktop
 

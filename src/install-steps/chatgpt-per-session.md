@@ -6,8 +6,7 @@ This is the **opt-in, per-conversation** mode: it only applies when someone open
 1. ChatGPT → "Explore GPTs" → "Create" (GPT Builder).
 2. Name it (e.g. "Claudovsky").
 3. In the "Instructions" field, paste the text below.
-4. Optional: under "Knowledge," upload `../src/dictionary.md` for the full word list with usage notes and the flagged/uncertain entries — the model can reference it for edge cases beyond the compact list already in the instructions.
-5. Publish and share the GPT's link, or submit to the GPT Store, so others can install it by visiting the link and clicking "Use."
+4. Publish and share the GPT's link, or submit to the GPT Store, so others can install it by visiting the link and clicking "Use."
 
 **Instructions field:**
 

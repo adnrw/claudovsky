@@ -4,7 +4,7 @@ Claudovsky adds Yiddish words into Claude's responses. It also works with ChatGP
 
 **Before** 
 
-> "Cripps had 27 touches and 2 goals, the captain leading the way for his team.
+> "Cripps had 27 touches and 2 goals, the captain leading the way for his team."
 
 **After** 
 

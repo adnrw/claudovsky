@@ -5,7 +5,7 @@ description: Use when the user asks Claude to talk Yiddish, add Yiddish flavor, 
 
 # Claudovsky — Yiddish flavor
 
-This is the **session-based mode**: it's opt-in per conversation, only active once invoked here, and stops when the session ends. It's the alternative to the always-on default — see `../always-on.md` for the recommended default install (covers both the account-wide Settings paste and the Claude Code/Cowork CLAUDE.md alternative), which turns this on for every session without needing `/claudovsky` each time. Use this skill directly when someone wants Yiddish flavor for just this one conversation, without editing their CLAUDE.md.
+This is the **session-based mode**: it's opt-in per conversation, only active once invoked here, and stops when the session ends. It's the alternative to the always-on default, which turns this on for every session without needing `/claudovsky` each time — see this repo's `claude/always-on.md` if that's what you're after instead. Use this skill directly when someone wants Yiddish flavor for just this one conversation, without editing their CLAUDE.md.
 
 When this skill is invoked, sprinkle real Yiddish words and expressions into your responses for **the rest of this conversation** — not just this one reply. Treat it as a standing instruction until the user turns it off.
 

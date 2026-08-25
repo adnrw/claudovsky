@@ -2,7 +2,7 @@
 
 Want Yiddish flavor without changing your account settings? Use the Skills panel — a one-time upload, then invoke it whenever you want, off by default otherwise.
 
-## The easy way: upload the .skill file
+## Upload the .skill file
 
 1. Get `claudovsky.skill` (in this same `claude/` folder of the repo, or ask whoever sent you this for the file).
 2. Open Claude → your name/profile → **Settings** → **Skills**.

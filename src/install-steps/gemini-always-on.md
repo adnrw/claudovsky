@@ -1,6 +1,6 @@
 # Claudovsky for Gemini — always-on
 
-Copy-paste into "Saved info," no download, no account beyond Gemini itself. Two minutes, once, and it applies to every conversation from then on. Want it for just one chat instead? See [`per-session.md`](./per-session.md). Using Claude or ChatGPT instead? See [`../claude/always-on.md`](../claude/always-on.md) or [`../chatgpt/always-on.md`](../chatgpt/always-on.md).
+Copy-paste into "Saved info," no download, no account beyond Gemini itself. Two minutes, once, and it applies to every conversation from then on. Want it for just one chat instead? See [`per-session.md`](./per-session.md).
 
 ## Setup
 
