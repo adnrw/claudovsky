@@ -1,9 +1,17 @@
 # Claudovsky for ChatGPT — Custom Instructions (default, always-on)
 
-ChatGPT has no plugin/skill install mechanism — the closest things are Custom Instructions (account-wide, every chat) and Custom GPTs (only active in that specific GPT). This is the **default, always-on** path: it applies to every conversation on your account, same spirit as the Claude CLAUDE.md snippet.
+This will turn on Claudovsky account-wide, shtooping Yiddish words into every chat. You can turn Claudovsky off at any time, in any chat, by saying `Stop speaking like Claudovsky` or `Enough with the Yiddish`.
 
-**Setup:** ChatGPT → Settings → Personalization → Custom Instructions. Paste the block below into "Anything else ChatGPT should know about you?" (or the equivalent free-text field — labels shift between ChatGPT versions).
+If you want to Claudovsky on-demand, follow the instructions in [`per-session.md`](./per-session.md) which will let you start Claudovsky by typing `/claudovsky` and all responses in that chat will start including Yiddish words.
+
+**Setup:** 
+
+1. ChatGPT → Settings → Personalisation → Custom Instructions. 
+2. Paste the block below into "Anything else ChatGPT should know about you?" 
+3. Save
+
+**To turn it off later:** delete that saved-info entry, or turn Claudovsky off at any time, in any chat by saying `Stop speaking like Claudovsky` or `Enough with the Yiddish`.
+
+## Copy and Paste the entire block below
 
 {{INSTRUCTIONS_BLOCK}}
-
-Want it off by default and only on for one chat instead? See [`per-session.md`](./per-session.md).

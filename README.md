@@ -23,7 +23,7 @@ First, download the latest release for your platform using the links above.
 Then, decide how you want to use Claudovsky:
 
 - **Always-on:** Claudovsky will shtoop Yiddish words into every chat, except when you're talking about sensitive subjects. 
-- **Activated per-chat:** during any chat, you can start Claudovsky and all responses in that chat will start including Yiddish words.
+- **On-demand:** During any chat, you can call on Claudovsky with `/claudovsky` and all responses in that chat will start including Yiddish words.
 
 Follow the instructions in the download for more detail on getting it running. 
 

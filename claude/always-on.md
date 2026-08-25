@@ -2,7 +2,9 @@
 
 # Claudovsky for Claude — always-on
 
-Copy-paste, no GitHub, no terminal. Two minutes, once, and it's on by default for every new conversation from then on. Want it for just one chat instead? See [`per-session.md`](./per-session.md).
+This will turn on Claudovsky account-wide, shtooping Yiddish words into every chat. You can turn Claudovsky off at any time, in any chat, by saying `Stop speaking like Claudovsky` or `Enough with the Yiddish`.
+
+If you want to Claudovsky on-demand, follow the instructions in [`per-session.md`](./per-session.md) which will let you start Claudovsky by typing `/claudovsky` and all responses in that chat will start including Yiddish words.
 
 ## Claude Desktop
 
@@ -11,6 +13,20 @@ Copy-paste, no GitHub, no terminal. Two minutes, once, and it's on by default fo
 3. Open **Settings**.
 4. Go to **General → Instructions for Claude**.
 5. Paste the whole block below into that text box, underneath anything already in there:
+6. Save. Done 
+
+## Claude Mobile
+
+1. Open the sidebar.
+2. Tap your initials (bottom left).
+3. Open **Profile → Instructions**.
+4. Paste the same block from the Claude Desktop section above.
+5. Save. Done.
+
+**To turn it off later:** delete that saved-info entry, or turn Claudovsky off at any time, in any chat by saying `Stop speaking like Claudovsky` or `Enough with the Yiddish`
+
+
+## Copy and Paste the entire block below
 
 ```
 ---- Claudovsky ----
@@ -76,25 +92,3 @@ majontek); sechnaytched=crooked/twisted/tangled; shtoop=stuff/cram into.
 
 ---- end Claudovsky ----
 ```
-
-6. Save. Done — every new conversation now has Yiddish flavor by default.
-
-**To turn it off later:** just delete that text from the same settings box, or type "Stop speaking like Claudovsky" in any chat for that conversation only.
-
-## Claude Mobile
-
-1. Open the sidebar.
-2. Tap your initials (bottom left).
-3. Open **Profile → Instructions**.
-4. Paste the same block from the Claude Desktop section above.
-5. Save. Done.
-
-## Claude Code / Cowork alternative: CLAUDE.md
-
-Rather than (or in addition to) the account-wide Settings paste above, you can paste the same block into a project's `CLAUDE.md` (Claude Code: project or `~/.claude/CLAUDE.md` for global; Cowork: project instructions) instead — useful if you want it scoped to one project or shared with a team via the repo, rather than tied to your personal account. Same block, same steps, different paste target; nothing else changes.
-
-## That's it
-
-Want it off by default and only on when you ask? See [`per-session.md`](./per-session.md) instead — no settings paste needed.
-
-Everything else in this `claude/` folder — the `.skill` file, the source skill content — is for people who use Claude Code or want a shareable per-session install. See [`README.md`](./README.md) in this folder for that side of things.
