@@ -7,7 +7,7 @@ Canonical, hand-edited sources (all under src/):
   - src/install-steps/*.md     hand-written "go here, click that" steps per platform+mode,
                                 each with a {{INSTRUCTIONS_BLOCK}} placeholder where the
                                 generated paste-block goes (claude-per-session.md has none —
-                                it points at the .skill file/plugin instead, so it's copied
+                                it points at the .skill file instead, so it's copied
                                 through with just an auto-generated header)
 
 Run from anywhere after editing any of the above, before committing:
@@ -18,10 +18,10 @@ Generated (never hand-edit these — edit the sources above instead):
   - claude/always-on.md, claude/per-session.md, claude/snippets/always-on-claude-md.md
   - chatgpt/always-on.md, chatgpt/per-session.md
   - gemini/always-on.md, gemini/per-session.md
-  - claude/skills/claudovsky/SKILL.md (Rules section only; wrapper comes from
+  - claude/claudovsky/SKILL.md (Rules section only; wrapper comes from
     src/install-steps/claude-skill-wrapper.md)
-  - claude/skills/claudovsky/reference/dictionary.md (exact copy of the master)
-  - claude/claudovsky.skill (zipped fresh from claude/skills/claudovsky/ every run)
+  - claude/claudovsky/reference/dictionary.md (exact copy of the master)
+  - claude/claudovsky.skill (zipped fresh from claude/claudovsky/ every run)
 
 NOT touched by this script (prose/overview pages, hand-maintained):
   README.md, claude/README.md, chatgpt/README.md, gemini/README.md
@@ -37,7 +37,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DICTIONARY = ROOT / "src" / "dictionary.md"
 RULES = ROOT / "src" / "rules.md"
 INSTALL_STEPS = ROOT / "src" / "install-steps"
-SKILL_DIR = ROOT / "claude" / "skills" / "claudovsky"
+SKILL_DIR = ROOT / "claude" / "claudovsky"
 SKILL_MD = SKILL_DIR / "SKILL.md"
 SKILL_DICT = SKILL_DIR / "reference" / "dictionary.md"
 SKILL_ZIP = ROOT / "claude" / "claudovsky.skill"
@@ -267,7 +267,7 @@ def main() -> int:
     skill_md_content = wrapper_text.replace("{{RULES_LIST}}", render_skill_rules(rules))
     write_if_changed(SKILL_MD, skill_md_content, changed)
 
-    # 6: repack claude/claudovsky.skill fresh from claude/skills/claudovsky/.
+    # 6: repack claude/claudovsky.skill fresh from claude/claudovsky/.
     # Built in memory (device_bash mounts can't delete files, so no temp-file
     # dance) and only written to disk if the bytes actually changed.
     SKILL_ZIP.parent.mkdir(parents=True, exist_ok=True)

@@ -5,7 +5,7 @@ description: Canonical behavioral rules for Claudovsky. src/build.py renders the
 
 # Claudovsky Rules
 
-Each section has a PROSE rendering (used in the pasteable always-on/per-session instructions) and/or a SKILL rendering (the terse numbered form used in claude/skills/claudovsky/SKILL.md). Edit both together when a section has both — src/build.py assembles every platform file straight from this content, so nothing here should ever fall out of sync with what people actually paste. `{PLATFORM}` is filled in per target (Claude / ChatGPT / Gemini).
+Each section has a PROSE rendering (used in the pasteable always-on/per-session instructions) and/or a SKILL rendering (the terse numbered form used in claude/claudovsky/SKILL.md). Edit both together when a section has both — src/build.py assembles every platform file straight from this content, so nothing here should ever fall out of sync with what people actually paste. `{PLATFORM}` is filled in per target (Claude / ChatGPT / Gemini).
 
 ## opening_frame
 
@@ -110,4 +110,4 @@ Use only well-known, verifiable Yiddish words from the list below — never inve
 ## word_list_only_no_embed
 
 PROSE:
-Use ONLY words from the dictionary (`reference/dictionary.md` if the claudovsky plugin's skill is installed, or the fetched/pasted word list otherwise) — never invent a Yiddish word or spelling, even if something else would sound fitting. Use the exact spelling given for each word, every time — e.g. always "schlep," never "shlep." Several of these words have common alternate spellings; don't switch to one just because it feels more natural in the moment — consistency matters more than any spelling being "more correct."
+Use ONLY words from the dictionary (`reference/dictionary.md` if the claudovsky skill is installed, or the fetched/pasted word list otherwise) — never invent a Yiddish word or spelling, even if something else would sound fitting. Use the exact spelling given for each word, every time — e.g. always "schlep," never "shlep." Several of these words have common alternate spellings; don't switch to one just because it feels more natural in the moment — consistency matters more than any spelling being "more correct."

@@ -11,13 +11,3 @@ Want Yiddish flavor without changing your account settings? Use the Skills panel
 
 *(Unconfirmed: exactly what the "Add" button offers — a direct file upload, or something else. Worth a quick check before relying on this as the instructions to give someone else.)*
 
-## The developer way: install the plugin from GitHub
-
-If you use Claude Code and want it available via the marketplace instead of a manual file upload:
-
-```
-/plugin marketplace add adnrw/claudovsky
-/plugin install claudovsky@claudovsky-marketplace
-```
-
-Then type `/claudovsky` at the start of any session. See the [`README.md`](./README.md) in this folder for the full plugin details, caveats, and the always-on CLAUDE.md snippet alternative for Claude Code/Cowork specifically.

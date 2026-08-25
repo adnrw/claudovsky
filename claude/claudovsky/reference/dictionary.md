@@ -81,6 +81,6 @@ Yiddish emerged around the 9th–10th century among Ashkenazi Jews in the Holy R
 
 ## Keeping this in sync
 
-This file, together with `src/rules.md`, is the canonical source for everything Claudovsky says and knows. Nothing else in this repo should be hand-edited for word or rule content — after changing either file, run `python3 src/build.py` from the repo root. It regenerates every platform's `always-on.md`/`per-session.md`, the bundled skill dictionary, `claude/skills/claudovsky/SKILL.md`'s rule section, and repacks `claude/claudovsky.skill`. See `src/build.py`'s own docstring for exactly what it touches, and `src/install-steps/*.md` for the hand-maintained "go here, click that" steps it stitches around the generated content.
+This file, together with `src/rules.md`, is the canonical source for everything Claudovsky says and knows. Nothing else in this repo should be hand-edited for word or rule content — after changing either file, run `python3 src/build.py` from the repo root. It regenerates every platform's `always-on.md`/`per-session.md`, the bundled skill dictionary, `claude/claudovsky/SKILL.md`'s rule section, and repacks `claude/claudovsky.skill`. See `src/build.py`'s own docstring for exactly what it touches, and `src/install-steps/*.md` for the hand-maintained "go here, click that" steps it stitches around the generated content.
 
 If a word's meaning changed (not just a typo), also update its **Short gloss** — that's what actually appears in the pasteable platform instructions.

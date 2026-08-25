@@ -28,4 +28,4 @@ Copy-paste, no GitHub, no terminal. Two minutes, once, and it's on by default fo
 
 Want it off by default and only on when you ask? See [`per-session.md`](./per-session.md) instead — no settings paste needed.
 
-Everything else in this `claude/` folder plus the plugin files at the repo root are for people who use Claude Code, want a shareable install for a group, or want to publish this on a marketplace. See [`README.md`](./README.md) in this folder for that side of things.
+Everything else in this `claude/` folder — the `.skill` file, the source skill content — is for people who use Claude Code or want a shareable per-session install. See [`README.md`](./README.md) in this folder for that side of things.

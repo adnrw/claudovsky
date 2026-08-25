@@ -6,4 +6,4 @@ Paste this into a `CLAUDE.md` (Claude Code: project or `~/.claude/CLAUDE.md` for
 
 {{INSTRUCTIONS_BLOCK}}
 
-This is a copy-paste step, not a plugin install — Claude Code and Cowork read CLAUDE.md / project instructions every turn, but plugins can't currently write to that file for you automatically. If the `claudovsky` plugin is also installed, this snippet will point Claude at its dictionary for consistent word choices instead of improvising.
+This is a copy-paste step, not an automatic install — Claude Code and Cowork read CLAUDE.md / project instructions every turn, but nothing writes to that file for you automatically. If the `claudovsky` skill is also installed (via the `.skill` file), this snippet will point Claude at its dictionary for consistent word choices instead of improvising.
