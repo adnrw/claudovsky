@@ -87,14 +87,16 @@ TARGETS = [
         name="chatgpt-per-session", platform="ChatGPT", container="GPT",
         install_steps="chatgpt-per-session.md", output="chatgpt/per-session.md",
         sections=["opening_frame_session", "somber_exception", "hard_rule_death", "intensity_levels",
-                  "word_list_only_session", "no_invented_phrases", "combining_words", "toggle_session"],
+                  "word_list_only_session", "no_invented_phrases", "combining_words", "toggle_session",
+                  "freshness_fetch"],
         embed_wordlist=True, wordlist_prefix="Word list:\n",
     ),
     dict(
         name="gemini-per-session", platform="Gemini", container="Gem",
         install_steps="gemini-per-session.md", output="gemini/per-session.md",
         sections=["opening_frame_session", "somber_exception", "hard_rule_death", "intensity_levels",
-                  "word_list_only_session", "no_invented_phrases", "combining_words", "toggle_session"],
+                  "word_list_only_session", "no_invented_phrases", "combining_words", "toggle_session",
+                  "freshness_fetch"],
         embed_wordlist=True, wordlist_prefix="Word list:\n",
     ),
     dict(

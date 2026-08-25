@@ -1,45 +1,49 @@
-# Claudovsky
+# Claudovsky - a bissel Yiddish in your Claude 
 
-A bissel Yiddish in your Claude (or equivalent)
+Claudovsky adds Yiddish words into Claude's responses. It also works with ChatGPT and Gemini.
 
-**Before:** "Cripps had 27 touches and 2 goals, the captain leading the way for his team.
+**Before** 
 
-**After:** "Cripps had 27 touches and 2 goals, such a mensch doing his thing for the team."
+> "Cripps had 27 touches and 2 goals, the captain leading the way for his team.
 
-## How it works
+**After** 
 
-Claudovsky works in two different ways:
+> "Cripps had 27 touches and 2 goals, what a mensch, doing his thing for the team."
 
-- **Always-on:** include Claudovsky's prompt in your AI platform's account context/instructions, and it will pepper Yiddish words into every new conversation.
-- **Manually invoked per-session:** during a chat, you can invoke Claudovsky one conversation at a time and it doesn't touch your regular chats.
+## Download Claudovsky
 
-Claudovsky will also refrain from adding Yiddish words when it detects you're discussing something sensitive.
+- [Claudovsky for Claude](https://github.com/adnrw/claudovsky/releases/latest/download/claude.zip)
+- [Claudovsky for ChatGPT](https://github.com/adnrw/claudovsky/releases/latest/download/chatgpt.zip)
+- [Claudovsky for Gemini](https://github.com/adnrw/claudovsky/releases/latest/download/gemini.zip)
 
-### Intensity
+## Install and use Claudovsky
 
-Claudovsky has three intensity levels, switchable anytime:
+First, download the latest release for your platform using the links above.
+
+Then, decide how you want to use Claudovsky:
+
+- **Always-on:** Claudovsky will shtoop Yiddish words into every chat, except when you're talking about sensitive subjects. 
+- **Activated per-chat:** during any chat, you can start Claudovsky and all responses in that chat will start including Yiddish words.
+
+Follow the instructions in the download for more detail on getting it running. 
+
+You can turn Claudovsky off at any time, in any chat by saying `Stop speaking like Claudovsky` or `Enough with the Yiddish`.
+
+### How much Yiddish
+
+Claudovsky has three Yiddish levels:
 
 - **Nebbish:** light touch, a Yiddish word here and there
 - **Mensch:** a Yiddish word or two per paragraph
 - **Macher (default):** a Yiddish word added to most sentences
 
-## Installation
-
-Claudvosky installation is slightly different depending on your AI platform and how you want it to work.
-
-| Platform | Always-on | Per-session |
-|---|---|---|
-| Claude | [`claude/always-on.md`](./claude/always-on.md) — paste into Settings → Instructions for Claude | [`claude/per-session.md`](./claude/per-session.md) — upload the `.skill` file via Settings → Skills, then invoke with `/claudovsky` |
-| ChatGPT | [`chatgpt/always-on.md`](./chatgpt/always-on.md) — paste into Settings → Personalization → Custom Instructions | [`chatgpt/per-session.md`](./chatgpt/per-session.md) — build/open the shared "Claudovsky" Custom GPT |
-| Gemini | [`gemini/always-on.md`](./gemini/always-on.md) — paste into Saved info | [`gemini/per-session.md`](./gemini/per-session.md) — build/open the shared "Claudovsky" Gem |
-
-Each platform's page has the full copy-paste block and instructions on what to do with it.
+Switch at any time by telling Claudovsky to use a different level `Claudovsky, be a mensch`.
 
 ## Dictionary
 
-Every word Claudovsky is allowed to use (with definitions and usage examples) lives in [`src/dictionary.md`](./src/dictionary.md). 
+Every word Claudovsky is allowed to use (with definitions and usage examples) lives in [`The Claudovsky Dictionary`](./src/dictionary.md). 
 
-If your platform allows it, Claudovsky will check for dicitonary updates once per conversation for the latest words; otherwise it will use the list on your local machine.
+If your platform allows it, Claudovsky will check for dictionary updates once per conversation for the latest words; otherwise it will use the list on your local machine.
 
 ## License
 

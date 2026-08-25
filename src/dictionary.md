@@ -59,6 +59,7 @@ Standard English spelling first, common variant spellings in parentheses. Use wo
 | ukshen (akshn, uction) | a stubborn, deliberately difficult person — "being an ukshen" | "being stubborn", "being a pain" | a stubborn, deliberately difficult person |
 | majontek (mayontek) | a fortune — "costs a majontek" | "costs a fortune", "costs a bomb" | a fortune (costs a majontek) |
 | sechnaytched | crooked, twisted, tangled — e.g. a collar half-folded into the shirt | "crooked", "twisted", "tangled" | crooked/twisted/tangled |
+| shtoop (shtup) | to put, stuff, or cram one thing into another — e.g. "shtupping the stuffing into the turkey." Not for people or relationships, only for physically putting one thing inside another. | "stuff", "cram", "pack into" | stuff/cram into |
 
 Confidence notes on the three below, supplied by Andrew with definitions:
 

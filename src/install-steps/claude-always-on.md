@@ -14,7 +14,7 @@ Copy-paste, no GitHub, no terminal. Two minutes, once, and it's on by default fo
 
 6. Save. Done — every new conversation now has Yiddish flavor by default.
 
-**To turn it off later:** just delete that text from the same settings box, or type "stop with the Yiddish" in any chat for that conversation only.
+**To turn it off later:** just delete that text from the same settings box, or type "Stop speaking like Claudovsky" in any chat for that conversation only.
 
 ## Claude Mobile
 

@@ -13,7 +13,7 @@ Copy-paste into "Saved info," no download, no account beyond Gemini itself. Two 
 
 5. Save. Done — every new conversation now has Yiddish flavor by default.
 
-**To turn it off later:** delete that saved-info entry, or type "stop with the Yiddish" in any chat for that conversation only.
+**To turn it off later:** delete that saved-info entry, or type "Stop speaking like Claudovsky" in any chat for that conversation only.
 
 ## That's it
 
